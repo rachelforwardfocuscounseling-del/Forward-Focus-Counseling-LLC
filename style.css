@@ -40,3 +40,23 @@
   .location-split h2{font-size:2rem}
   .footer{padding-top:44px}
 }
+
+
+/* Logo + portrait update */
+.brand-logo{display:flex;align-items:center;flex:0 0 auto;max-width:none;font-size:0}
+.brand-logo img{width:210px;height:68px;object-fit:contain;object-position:left center}
+.hero .portrait{display:block;width:100%;min-height:0;object-position:50% 18%}
+@media(max-width:850px){
+  .brand-logo{max-width:44%}
+  .brand-logo img{width:180px;height:62px}
+  .hero-grid{gap:32px}
+  .hero .portrait{display:block;max-height:none;width:min(100%,520px);justify-self:center;aspect-ratio:4/5;object-fit:cover;object-position:50% 16%}
+}
+@media(max-width:560px){
+  .navin{gap:10px}
+  .brand-logo{max-width:48%;min-width:0}
+  .brand-logo img{width:145px;height:58px}
+  .mobile-consult{font-size:.74rem;padding:9px 10px}
+  .hero-grid{gap:26px}
+  .hero .portrait{display:block!important;width:100%;height:auto;max-height:none;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;border-radius:22px}
+}
